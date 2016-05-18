@@ -6,6 +6,9 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 
 
+从源码中解析注解字段
+
+
 [npm-image]: https://img.shields.io/npm/v/get-annotation.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/get-annotation
 [travis-image]: https://img.shields.io/travis/bencode/get-annotation/master.svg?style=flat-square

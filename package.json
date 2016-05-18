@@ -1,7 +1,7 @@
 {
   "name": "get-annotation",
   "version": "1.0.0",
-  "description": "从源码中解决注释字段",
+  "description": "从源码中解析注解字段",
   "main": "lib/index",
   "scripts": {
     "lint": "eslint lib test",

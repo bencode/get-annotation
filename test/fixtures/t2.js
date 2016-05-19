@@ -3,11 +3,18 @@
  *
  * @entry
  *
- * @moduleId: 'test/my-module'
+ * @path: /a/b-c/hello
  *
  * @lessbuild: false
  *
- * @path: "/a/b-c/hello"
+ * @ignore: true
+ *
+ * @webpack.entry
+ *
+ * @server.url: http://www.google.com
+ *
+ * @count: 1234
+ * @price: 12.34
  */
 
 /**

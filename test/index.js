@@ -10,10 +10,14 @@ const get = require('..');
 describe('get-annotation', function() {
   it('get annotation', function() {
     const body = fixture('t2.js');
-    get(body, 'entry').should.be.equal(true);
-    get(body, 'moduleId').should.be.equal('test/my-module');
-    get(body, 'lessbuild').should.be.equal('false');
-    get(body, 'path').should.be.equal('/a/b-c/hello');
+    get(body, 'entry').should.be.true();
+    get(body, 'path').should.equal('/a/b-c/hello');
+    get(body, 'lessbuild').should.be.false();
+    get(body, 'ignore').should.be.true();
+    get(body, 'webpack.entry').should.be.true();
+    get(body, 'server.url').should.equal('http://www.google.com');
+    get(body, 'count').should.equal(1234);
+    get(body, 'price').should.equal(12.34);
 
     // once more
     get(body, 'path').should.be.equal('/a/b-c/hello');
